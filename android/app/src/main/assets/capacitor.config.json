@@ -1,0 +1,8 @@
+{
+	"appId": "com.myofflinemusic.app",
+	"appName": "My Offline Music",
+	"webDir": "dist",
+	"server": {
+		"androidScheme": "https"
+	}
+}

@@ -1,0 +1,18 @@
+{
+  "name": "My Offline Music",
+  "short_name": "OfflineMusic",
+  "description": "A fully offline music player with Material Design 3 UI, custom equalizer, sleep timer, local file scanner, playlists, lyrics, and an algorithmic synthesizer.",
+  "start_url": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#0b0b0f",
+  "theme_color": "#0b0b0f",
+  "icons": [
+    {
+      "src": "/launcher-icon.jpg",
+      "sizes": "512x512",
+      "type": "image/jpeg",
+      "purpose": "any maskable"
+    }
+  ]
+}
