@@ -1,0 +1,32 @@
+# Auto detect text files and perform LF normalization
+* text=auto
+
+# Declare explicit text file types
+*.java text
+*.xml text
+*.gradle text
+*.properties text
+*.json text
+*.yml text
+*.yaml text
+*.md text
+*.html text
+*.ts text
+*.tsx text
+*.css text
+*.js text
+
+# Ensure shell scripts always use LF (unix) line endings
+gradlew text eol=lf
+*.sh text eol=lf
+
+# Explicitly mark binary files to protect them from line ending conversion
+*.jar binary
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.webp binary
+*.apk binary
+*.class binary
