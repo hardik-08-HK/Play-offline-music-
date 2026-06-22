@@ -34,10 +34,10 @@ jobs:
       - name: Sync Capacitor android platform
         run: npx cap sync android
 
-      - name: Regenerate Clean Gradle Wrapper
+      - name: Fix and Download clean Gradle Wrapper JAR
         run: |
-          cd android
-          gradle wrapper --gradle-version 8.14.3 --distribution-type all
+          mkdir -p android/gradle/wrapper
+          curl -sLok android/gradle/wrapper/gradle-wrapper.jar https://raw.githubusercontent.com/gradle/gradle/v8.14.3/gradle/wrapper/gradle-wrapper.jar
 
       - name: Build Android App (APK)
         run: |
