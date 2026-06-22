@@ -37,7 +37,7 @@ jobs:
       - name: Fix and Download clean Gradle Wrapper JAR
         run: |
           mkdir -p android/gradle/wrapper
-          curl -sLok android/gradle/wrapper/gradle-wrapper.jar https://raw.githubusercontent.com/gradle/gradle/v8.10.2/gradle/wrapper/gradle-wrapper.jar
+          curl -sLok android/gradle/wrapper/gradle-wrapper.jar https://repo1.maven.org/maven2/org/gradle/gradle-wrapper/8.10.2/gradle-wrapper-8.10.2.jar
 
       - name: Build Android App (APK)
         run: |
