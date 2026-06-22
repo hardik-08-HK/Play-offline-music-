@@ -1,0 +1,47 @@
+{
+  "collections": {
+    "users": {
+      "path": "users/{userId}",
+      "description": "User cloud profiles containing custom playlists, themes, skins, favorites, and configurations for secure synchronization across desktop and mobile devices.",
+      "fields": {
+        "email": {
+          "type": "string",
+          "description": "User email address"
+        },
+        "displayName": {
+          "type": "string",
+          "description": "User profile display name"
+        },
+        "updatedAt": {
+          "type": "number",
+          "description": "Timestamp of the last synchronization action"
+        },
+        "playlists": {
+          "type": "array",
+          "description": "List of custom playlists with song IDs, names, and metadata"
+        },
+        "recentSongIds": {
+          "type": "array",
+          "description": "List of recently played offline song IDs"
+        },
+        "favoriteSongIds": {
+          "type": "array",
+          "description": "List of song IDs marked as favorites by the user"
+        },
+        "activeTheme": {
+          "type": "string",
+          "description": "Currently active accent color or design theme"
+        },
+        "activeSkin": {
+          "type": "string",
+          "description": "Currently active visual skin style layout override"
+        }
+      },
+      "rules": {
+        "read": "request.auth != null && request.auth.uid == userId",
+        "write": "request.auth != null && request.auth.uid == userId",
+        "delete": "false"
+      }
+    }
+  }
+}

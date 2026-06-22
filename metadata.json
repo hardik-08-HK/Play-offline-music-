@@ -1,0 +1,6 @@
+{
+  "name": "My Offline Music",
+  "description": "A fully offline music player with native-like Material Design 3 UI, custom equalizer, sleep timer, local file scanner, playlists, lyrics, and an APK update download simulator.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
